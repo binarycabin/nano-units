@@ -2,7 +2,13 @@
 
 A simple helper for converting units of Nano cryptocurrency
 
-# Usage
+## Install
+
+```
+composer require binarycabin/nano-units
+```
+
+## Usage
 
 ```
 \NanoUnit::convert($unitFrom,$unitTo,$value)
@@ -15,7 +21,7 @@ for example
 // Returns "99000"
 ```
 
-# Laravel
+## Laravel
 
 The package makes a NanoUnit facade, so you can simply do
 
@@ -23,7 +29,7 @@ The package makes a NanoUnit facade, so you can simply do
 \NanoUnit::convert($unitFrom,$unitTo,$value)
 ```
 
-# Units Available
+## Units Available
 
 - Gnano
 - ticker
