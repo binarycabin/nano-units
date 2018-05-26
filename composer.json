@@ -1,0 +1,35 @@
+{
+    "name": "binarycabin/nano-units",
+    "description": "A simple helper for converting units of Nano cryptocurrency",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Kilroy",
+            "email": "jeff@binarycabin.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BinaryCabin\\NanoUnits\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/AppTestCase.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BinaryCabin\\NanoUnits\\Providers\\NanoUnitsServiceProvider"
+            ],
+            "aliases": {
+                "NanoUnits": "BinaryCabin\\NanoUnits\\Facades\\NanoUnits"
+            }
+        }
+    }
+}
