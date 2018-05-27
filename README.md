@@ -11,22 +11,22 @@ composer require binarycabin/nano-units
 ## Usage
 
 ```
-\NanoUnit::convert($unitFrom,$unitTo,$value)
+\NanoUnits::convert($unitFrom,$unitTo,$value)
 ```
 
 for example
 
 ```
-\NanoUnit::convert('Mnano','knano',99)
+\NanoUnits::convert('Mnano','knano',99)
 // Returns "99000"
 ```
 
 ## Laravel
 
-The package makes a NanoUnit facade, so you can simply do
+The package makes a NanoUnits facade, so you can simply do
 
 ```
-\NanoUnit::convert($unitFrom,$unitTo,$value)
+\NanoUnits::convert($unitFrom,$unitTo,$value)
 ```
 
 ## Units Available
